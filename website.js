@@ -11,6 +11,8 @@ function Menu() {
     navIcon.src = '/icons-logo/exit-nav.png';
   }
 }
+
+
 /*GALLERY*/
 const galleryItems = [
   { src: '/gallery/cheesy-hungarian.jpg', alt: 'Photo 1', category: 'food' },
@@ -168,8 +170,6 @@ function renderGalleryItems(items) {
   rearrangeItems();
 }
 
-
-
 function rearrangeItems() {
   const items = document.querySelectorAll('.gallery-gallery-item');
   items.forEach((item) => {
@@ -179,12 +179,12 @@ function rearrangeItems() {
 
 renderGalleryItems(galleryItems);
 
+
 /*CONTACT*/
 document.addEventListener("DOMContentLoaded", function() {
   var form = document.getElementById("contactForm");
   form.addEventListener("submit", function(event) {
     event.preventDefault(); 
-    
     
     window.alert("Submitted!");
   });
